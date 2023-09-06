@@ -1,0 +1,20 @@
+package Day2;
+
+public class Day2 {
+
+	public static void main(String[] args) {
+		demo d = new demo();
+		System.out.println(d.a);
+		
+		
+	}
+	
+	public void view() {
+		int i = 5;
+	}
+	
+	public void print() {
+		
+	}
+
+}

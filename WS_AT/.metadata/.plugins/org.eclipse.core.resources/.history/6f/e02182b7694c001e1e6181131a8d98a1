@@ -1,0 +1,12 @@
+package Day2;
+
+public class demo {
+	
+	int a = 5;
+	
+	
+	public void view() {
+		a = 6;
+	}
+
+}

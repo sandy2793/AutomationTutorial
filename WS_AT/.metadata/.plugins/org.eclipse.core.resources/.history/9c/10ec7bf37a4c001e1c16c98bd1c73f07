@@ -1,0 +1,47 @@
+package Day2;
+
+public class FirstClass {
+	//instance variable
+	int instanceVariable = 7;
+	
+	//static variable
+	static int staticVariable = 10;
+	
+	public static void main(String[] args) {
+		FirstClass class11 = new FirstClass();
+		class11.print();
+		SecondClass class21 = new SecondClass();
+		SecondClass class22 = new SecondClass();
+		class21.a = 6;
+		System.out.println(class21.a);
+		System.out.println(class22.a);
+//		System.out.println(c);
+		
+
+		//Primitive data type
+		char charVariable = 'c';
+		boolean booleanVariable = true;
+		int intVariable = -1;
+		float floatVariable = 2.5f;
+		double doubleVariable = 5.012343;
+		
+		//non-Primitive data type
+		String stringVariable = "Hello World!!!";
+		String StringVariable = "Hello";
+		
+	}
+	
+	public void change() {
+		
+		int i = 5;
+	}
+	
+	public void print() {
+		//local variables
+		int localVariable = -1;
+		System.out.println("Local Variables: "+localVariable);
+		System.out.println("Instance Variables: "+instanceVariable);
+		System.out.println("Static Variables: "+staticVariable);
+	}
+
+}
