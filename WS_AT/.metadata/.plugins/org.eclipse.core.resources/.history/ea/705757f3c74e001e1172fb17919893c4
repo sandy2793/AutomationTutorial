@@ -1,0 +1,35 @@
+package Day3;
+
+public class OperatorDemo {
+	
+	public static void main(String[] args) {
+		
+		int a = 10;
+		int b = 20;
+		
+//		int sum = a + b;
+//		int subtraction = a - b;
+//		int mutiplication = a * b;
+//		int division = a/b;
+//		int module = a%b;
+//		
+//		System.out.println("Addition: "+sum);
+//		System.out.println("Subtraction: "+subtraction);
+//		System.out.println("Mutiplcation: "+mutiplication);
+//		System.out.println("Division: "+division);
+//		System.out.println("Module: "+module);
+		
+		
+		//
+		System.out.println(a++);
+		System.out.println(a);
+		System.out.println(++a);
+		System.out.println(b--);
+		System.out.println(b);
+		System.out.println(--b);
+		
+	}
+	
+	
+
+}
