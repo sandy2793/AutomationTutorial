@@ -1,4 +1,4 @@
-package Day2;
+package at.day002;
 
 public class SecondClass {
 	//instance variable

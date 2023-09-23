@@ -1,4 +1,4 @@
-package Day3;
+package at.day003;
 
 public class OperatorDemo {
 	
