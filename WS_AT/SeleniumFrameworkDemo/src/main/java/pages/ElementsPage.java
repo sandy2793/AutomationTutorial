@@ -5,14 +5,15 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ElementsPage {
-//	WebDriver driver;
+	WebDriver driver;
 	
 	public ElementsPage(WebDriver driver) {
-//		this.driver = driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -43,11 +44,11 @@ public class ElementsPage {
 	}
 	
 	public void clickOnBookStoreSubMenu(String subMenuName) {
-//		List<WebElement> elements_subMenu_list = getElementsSubMenuList();
 		for(int i = 0; i < bookStoreSubMenu_list.size() ; i++) {
 			boolean condition = bookStoreSubMenu_list.get(i).getText().equals(subMenuName);
 			if (condition) {
-				bookStoreSubMenu_list.get(i).click();
+				WebdriverMethods.scrollUsingJavascriptexecutor(driver, bookStoreSubMenu_list.get(i));
+				WebdriverMethods.click(bookStoreSubMenu_list.get(i));
 				break;
 			}
 			else if(i == bookStoreSubMenu_list.size()-1) {

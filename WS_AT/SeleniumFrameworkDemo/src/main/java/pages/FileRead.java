@@ -72,6 +72,15 @@ public class FileRead {
 		}
 	}
 	
+	public static int getNoOfColumn(String sheetName) {
+		try {
+			initWorkbook();
+			return workbook.getSheet(sheetName).getRow(0).getLastCellNum();
+		} catch (Exception e) {
+			return 0;
+		}
+	}
+	
 	public static String getCellValue(String sheetName, int rowNum, int cellNum) {
 		try {
 			initWorkbook();
